@@ -94,7 +94,26 @@ a:link {
     background-color: transparent;
     text-decoration: none;
   }
-  
+
+ audio {
+    width: 300px;
+    height: 40px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+}
+
+/* Style the surrounding container (optional) */
+.audio-container {
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    
+    display: inline-block;
+}
   a:active {
     background-color: transparent;
     text-decoration: none;
