@@ -8,10 +8,19 @@
     <!-- BONOBONO TITLE-->
 </head>
 <body>
-    <audio controls loop>
-    <source src="candyland.mp3" type="audio/mpeg">
-    
+    <audio id="myAudio" controls>
+        <source src="Candyland.mp3" type="audio/mpeg">
+        
     </audio>
+
+    <script>
+        const audio = document.getElementById('myAudio');
+
+        audio.addEventListener('ended', function() {
+            this.currentTime = 0;  // Reset the audio to the beginning
+            this.play();           // Play it again
+        });
+    </script>
     <!--This is a bonobono -->
     <b><span>★BONOBONO★</span></b>
     <!--This is a bonobono -->
