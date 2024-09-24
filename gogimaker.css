@@ -8,7 +8,7 @@ span {
     animation-iteration-count: infinite;
     font-size:184.5px;
 
-    
+
 }
 i {
     font-family: Arial, Helvetica, sans-serif;
@@ -79,17 +79,17 @@ p {
 }
 
 a:link {
-    
+
     background-color: transparent;
     text-decoration: none;
   }
-  
+
   a:visited {
-    
+
     background-color: transparent;
     text-decoration: none;
   }
-  
+
   a:hover {
     background-color: transparent;
     text-decoration: none;
@@ -111,10 +111,154 @@ a:link {
     padding: 0px;
     background-color: transparent;
     border-radius: 0px;
-    
+
     display: inline-block;
 }
   a:active {
     background-color: transparent;
     text-decoration: none;
+  }
+
+  .moving-text {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    animation: move 2.4s linear infinite;
+  }
+  .audio {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    animation: audio 2.4s linear infinite;
+  }
+  .fastmoving {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    animation: fastmove 0.4s linear infinite;
+  }
+  .premove {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    animation: fastmove 1s linear infinite;
+  }
+  .clickplay{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    animation: ymove 0.25s linear infinite;
+  }
+  .bonobono{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    animation: ymove2 0.1s linear infinite;
+  }
+  .bonobono2{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    animation: xmove2 0.03s linear infinite;
+  }
+  .xmove{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    animation: xmove 0.1s linear infinite;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(-50px);
+    }
+    50% {
+      transform: translateX(1286px);
+    }
+    100% {
+      transform: translateX(-50px);
+    }
+  }
+
+  @keyframes fastmove {
+    0% {
+      transform: translateX(-50px);
+    }
+    50% {
+      transform: translateX(815px);
+    }
+    100% {
+      transform: translateX(-50px);
+    }
+  }
+  @keyframes ymove {
+    0% {
+      transform: translateY(-60px);
+    }
+    50% {
+      transform: translateY(60px);
+    }
+    100% {
+      transform: translateY(-60px);
+    }
+  }
+  @keyframes ymove2 {
+    0% {
+      transform: translateY(-30px);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(-30px);
+    }
+  }
+  @keyframes xmove {
+    0% {
+      transform: translateX(-20px);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(-20px);
+    }
+  }
+  @keyframes xmove2 {
+    0% {
+      transform: translateY(-40px);
+    }
+    50% {
+      transform: translateY(40px);
+    }
+    100% {
+      transform: translateY(-40px);
+    }
+  }
+  @keyframes audio {
+    0% {
+      transform: translateX(-50px);
+    }
+    50% {
+      transform: translateX(1286px);
+    }
+    100% {
+      transform: translateX(-50px);
+    }
   }
